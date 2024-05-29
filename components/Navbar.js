@@ -62,7 +62,7 @@ const Navbar = () => {
 const ContentSidebar = ({ toggleMenu }) => {
   return (
     <div className='items-center flex-col sm:flex-row flex'>
-      <Button variant={'primary'}>Тасалбар</Button>
+      <Button variant={'primary'} >Тасалбар</Button>
     </div>
   );
 };
