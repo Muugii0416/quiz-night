@@ -8,6 +8,7 @@ import {
   Footer,
   Hero,
   Navbar,
+  Tickets,
   Sponsor,
   TopCreator,
 } from '@/components';
@@ -19,6 +20,7 @@ const Home = () => {
     <div className='h-full main_bg text-white overflow-hidden' id='top'>
       <Navbar />
       <Hero />
+      <Tickets/>
       <AboutUs />
       <Collections />
       <FeaturedArtworks />

@@ -13,6 +13,7 @@ import Navbar from './Navbar';
 import NFTItem from './NFTItem';
 import Sponsor from './Sponsor';
 import TopCreator from './TopCreator';
+import Tickets from './Tickets';
 
 export {
   FAQ,
@@ -30,4 +31,5 @@ export {
   Container,
   Input,
   Hero,
+  Tickets
 };
