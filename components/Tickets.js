@@ -1,10 +1,11 @@
 import React from "react";
 import { Button, Container } from ".";
 import { Reveal } from "react-awesome-reveal";
-import {  fadeInLeft } from "@/keyframes";
+import { fadeInLeft } from "@/keyframes";
 import Image from "next/image";
 import moment from "moment";
 import "moment/locale/mn";
+import Link from "next/link";
 const Tickets = () => {
   const now = moment();
   // Сарын эхний өдөр
@@ -24,99 +25,92 @@ const Tickets = () => {
       .startOf("month")
       .day(targetDayOfWeek);
   }
-  
   return (
     <Container className="mb-44 scroll-mt-10" id="tickets">
       <div className="text-center mb-8">
         <h2 className="font-bold text-3xl mb-2">Тасалбар</h2>
+        <h2 className="font-bold text-xl mb-2">
+          Телевизийн хамгийн их үзэгчтэй нэвтрүүлгүүдийн дийлэнх нь тааварт
+          нэвтрүүлэг байдаг нь хүмүүсийн сониуч зан болон өрсөлдөх дуртай
+          байдагтай холбоотой. QUIZ NIGHT бол найз нөхөд, хамт олноороо тэмцээнд
+          оролцохын хажуугаар цагийг зугаатай өнгөрүүлэх боломж олгодог үйл
+          ажиллагаа юм.
+        </h2>
       </div>
-      
-      <Reveal keyframes={fadeInLeft} triggerOnce >
-        <div className="flex flex-wrap justify-start gap-8">
-          <div className="flex flex-col items-center gap-[13.846px] w-[120px] pb-[13.846px] bg-[#FFF] rounded-2xl">
-            <div className="flex flex-col items-center gap-[13.846px] w-[120px] pb-[13.846px] bg-[#FFF] rounded-2xl">
-              <div className="flex justify-center items-center p-[12.846px_23.077px_14.538px_25.923px] w-[120px] h-[70px] bg-[#d6d6d6] rounded-t-xl">
-                <h1 className="font-bold text-2xl text-center text-[#303030]">
-                  {now.format("M")} сар
-                </h1>
-              </div>
 
-              <div className="flex flex-col justify-center items-center mt-[40px]">
-                <h1 className="font-bold text-3xl text-center text-black">
-                  2 дахь
-                </h1>
-
-                <h1 className="font-bold text-2xl text-center text-[#bab8b8] mt-[20px]">
-                  Өдөр
-                </h1>
-              </div>
-            </div>
+      <Reveal keyframes={fadeInLeft} triggerOnce>
+        <div className=" transition duration-300 ease-in-out bg-[#ffffff1a] p-5 rounded-lg shadow-lg flex">
+          <div className="rounded-lg overflow-hidden mb-3 relative w-[350px] h-[400px] sm:h-[300px] lg:h-[300px]">
+            <Image
+              layout="fill"
+              objectFit="cover"
+              objectPosition={"center"}
+              src="/collections/tuesday.png"
+            />
           </div>
 
-          <div className="w-full sm:w-[80%] ">
-            <div className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
-              <Image
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
-                src="/collections/scrollaw.jpg"
-                alt="Ticket Background"
-              />
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-50 p-4">
-                <h3 className="text-2xl font-bold mb-4">UB Quiz Night</h3>
-                <p className="text-lg mb-4">Мягмар гараг бүр</p>
-                <p className="text-lg mb-4">Хаяг: XYZ байр</p>
-                <p className="text-lg mb-6">Үнэ: 10,000 MNT</p>
-                <Button className="w-[100%] sm:w-[100%] h-[50px] from-[#B75CFF] to-[#671AE4]">
-                  Тасалбар худалдаж авах
-                </Button>
-              </div>
+          <div className="flex-1">
+            <div className="text-center p-2  sm:text-2xl">
+              Эвентийн нэр : Quiz Night
+            </div>
+            <div className="text-center p-2 ">
+              Хаяг байршил : Баянгол ресторан
+            </div>
+            <div className="text-center p-2  xs:text-xl">
+              Эхлэх өдөр : 7 хоног бүрийн Мягмар гариг
+            </div>
+            <div className="text-center p-2  xs:text-xl">
+              Эхлэх/Дуусах хугацаа : 19:00 - 23:00
+            </div>
+
+            <div className="text-center p-2  xs:text-xl">
+              Тайлбар : Quiz Night тэмцээнд оролцох ширээ болон багийн бооцооны
+              мөнгө багтсан
+            </div>
+            <div className="text-center p-2  xs:text-xl">Үнэ : 10000₮</div>
+            <div className="text-center p-2  xs:text-xl">
+              <Button className="btn bg-gradient-to-r from-[#B75CFF] to-[#671AE4] btn-primary w-[400px] mt-3 sm:w-[300px] lg:w-[400px] flex-1 justify-center ">
+                Тасалбар
+              </Button>
             </div>
           </div>
         </div>
       </Reveal>
-      
-      <Reveal keyframes={fadeInLeft} triggerOnce className="mt-10">
-        <div className="flex flex-wrap justify-start gap-8  ">
-          <div className="flex flex-col items-center gap-[13.846px] w-[120px] pb-[13.846px] bg-[#FFF] rounded-2xl">
-            <div className="flex flex-col items-center gap-[13.846px] w-[120px] pb-[13.846px] bg-[#FFF] rounded-2xl">
-                
-              <div className="flex justify-center items-center p-[12.846px_23.077px_14.538px_25.923px] w-[120px] h-[70px] bg-[#d6d6d6] rounded-t-xl">
-                <h1 className="font-bold text-2xl text-center text-[#303030]">
-                  {now.format("M")} сар
-                </h1>
-              </div>
 
-              <div className="flex flex-col justify-center items-center mt-[40px]">
-                <h1 className="font-bold text-3xl text-center text-black">
-                  4 дахь
-                </h1>
-
-                <h1 className="font-bold text-2xl text-center text-[#bab8b8] mt-[20px]">
-                  Өдөр
-                </h1>
-              </div>
-            </div>
+      <Reveal keyframes={fadeInLeft} triggerOnce>
+        <div className=" transition duration-300 ease-in-out bg-[#ffffff1a] p-5 rounded-lg shadow-lg flex mt-10">
+          <div className="rounded-lg overflow-hidden mb-3 relative w-[350px] h-[300px] sm:h-[200px] lg:h-[300px]">
+            <Image
+              layout="fill"
+              objectFit="cover"
+              objectPosition={"center"}
+              src="/collections/thursday.png"
+            />
           </div>
 
-          <div className="w-full sm:w-[80%] ">
-            <div className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
-              <Image
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
-                src="/collections/scrollaw.jpg"
-                alt="Ticket Background"
-              />
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-50 p-4">
-                <h3 className="text-2xl font-bold mb-4">UB Quiz Night</h3>
-                <p className="text-lg mb-4">Пүрэв гараг бүр</p>
-                <p className="text-lg mb-4">Хаяг: XYZ байр</p>
-                <p className="text-lg mb-6">Үнэ: 10,000 MNT</p>
-                <Button className="w-[100%] sm:w-[100%] h-[50px] from-[#B75CFF] to-[#671AE4]">
-                  Тасалбар худалдаж авах
-                </Button>
-              </div>
+          <div className="flex-1">
+            <div className="text-center p-2  sm:text-2xl">
+              Эвентийн нэр : Quiz Night
+            </div>
+            <div className="text-center p-2  xs:text-xl">
+              Хаяг байршил : Баянгол ресторан
+            </div>
+            <div className="text-center p-2  xs:text-xl">
+              Эхлэх өдөр : 7 хоног бүрийн Пүрэв гариг
+            </div>
+            <div className="text-center p-2  xs:text-xl">
+              Эхлэх/Дуусах хугацаа : 19:00 - 23:00
+            </div>
+
+            <div className="text-center p-2  xs:text-xl">
+              Тайлбар : Quiz Night тэмцээнд оролцох ширээ болон багийн бооцооны
+              мөнгө багтсан
+            </div>
+            <div className="text-center p-2  xs:text-xl">Үнэ : 10000₮</div>
+            <div className="text-center p-2  xs:text-xl">
+              <Button className="bg-gradient-to-r from-[#B75CFF] to-[#671AE4] w-[400px] mt-3 sm:w-[300px] lg:w-[400px] flex-1 justify-center">
+                <Link href="https://www.portal.mn/en">Тасалбар</Link>
+              </Button>
             </div>
           </div>
         </div>
