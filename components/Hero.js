@@ -19,19 +19,7 @@ const Hero = () => {
           </h1>
         </Reveal>
 
-        <div className='flex mb-10'>
-          <Reveal keyframes={fadeInUp} duration={1000} delay={200}>
-            <Button
-              isLink
-              href={'/#about'}
-              className={'mr-2'}
-              variant={'primary'}
-            >
-         Тасалбар
-            </Button>
-          </Reveal>
-
-        </div>
+    
    
       </div>
 

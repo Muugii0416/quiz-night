@@ -14,6 +14,7 @@ import NFTItem from './NFTItem';
 import Sponsor from './Sponsor';
 import TopCreator from './TopCreator';
 import Tickets from './Tickets';
+import Contact from './Contact';
 
 export {
   FAQ,
@@ -31,5 +32,6 @@ export {
   Container,
   Input,
   Hero,
-  Tickets
+  Tickets,
+  Contact
 };

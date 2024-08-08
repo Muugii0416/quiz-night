@@ -11,6 +11,7 @@ import {
   Tickets,
   Sponsor,
   TopCreator,
+  Contact,
 } from '@/components';
 import React from 'react';
 import { Reveal } from 'react-awesome-reveal';
@@ -23,23 +24,11 @@ const Home = () => {
       <Tickets/>
       <AboutUs />
       <Collections />
-      <FeaturedArtworks />
-   
-      <Container>
-        <div
-          className={
-            'bg-gradient-to-b from-[#B75CFF] to-[#671AE4] rounded-xl py-20 px-10 flex items-center justify-center shadow-lg flex-col mb-44'
-          }
-        >
-          <h2 className='font-bold text-2xl sm:text-4xl lg:text-5xl mb-5 w-full md:w-2/5 leading-snug text-center'>
-            Тасалбар авах бол
-          </h2>
-          <Reveal delay={200} duration={1000} keyframes={fadeInDownShorter}>
-            <Button>Тасалбар</Button>
-          </Reveal>
-        </div>
-      </Container>
+      <h1 className='font-bold text-3xl text-center mb-8'>Холбоо барих</h1>
 
+ <Contact/>
+ <h1 className='font-bold text-3xl text-center mb-8 mt-40'>Хамтрагч байгуулгууд</h1>
+<Sponsor/>
       <Footer />
     </div>
   );
