@@ -24,11 +24,12 @@ const Home = () => {
       <Tickets/>
       <AboutUs />
       <Collections />
+      <h1 className='font-bold text-3xl text-center mb-8 mt-40'>Хамтрагч байгууллагууд</h1>
+      <Sponsor/>
       <h1 className='font-bold text-3xl text-center mb-8'>Холбоо барих</h1>
 
  <Contact/>
- <h1 className='font-bold text-3xl text-center mb-8 mt-40'>Хамтрагч байгуулгууд</h1>
-<Sponsor/>
+
       <Footer />
     </div>
   );
