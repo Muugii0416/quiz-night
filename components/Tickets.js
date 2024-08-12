@@ -47,9 +47,7 @@ const Tickets = () => {
             />
           </div>
           <div className="flex-1 lg:ml-5">
-            <div className="text-center p-2 sm:text-2xl">
-              Эвентийн нэр : Quiz Night
-            </div>
+            <div className="text-center p-2 sm:text-2xl">Rookie Quiz</div>
             <div className="text-center p-2">
               Хаяг байршил : Баянгол ресторан
             </div>
@@ -93,9 +91,7 @@ const Tickets = () => {
             />
           </div>
           <div className="flex-1 lg:ml-5">
-            <div className="text-center p-2 sm:text-2xl">
-              Эвентийн нэр : Quiz Night
-            </div>
+            <div className="text-center p-2 sm:text-2xl">Quiz Night</div>
             <div className="text-center p-2 xs:text-xl">
               Хаяг байршил : Баянгол ресторан
             </div>
