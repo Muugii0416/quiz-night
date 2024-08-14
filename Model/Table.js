@@ -23,6 +23,10 @@ const Table = mongoose.Schema(
       required: true,
       unique: true,
     },
+    date: {
+      required: true,
+      type: Date,
+    },
   },
   {
     timestamps: true,
