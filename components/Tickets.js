@@ -122,5 +122,5 @@ const Tickets = () => {
 
 export default Tickets;
 
-https://www.portal.mn/quiznight/66b19dcad290ccac1873102d
+// https://www.portal.mn/quiznight/66b19dcad290ccac1873102d
 // https://www.portal.mn/quiznight/66b19f26d290ccac18731044
