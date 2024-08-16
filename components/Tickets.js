@@ -63,10 +63,7 @@ const Tickets = () => {
             </div>
             <div className="text-center p-2 xs:text-xl">Үнэ : 100,000₮</div>
             <div className="text-center p-2 xs:text-xl">
-              <Link
-                href=" https://www.portal.mn/quiznight/66b19f26d290ccac18731044"
-                passHref
-              >
+              <Link href="https://www.quiznight.mn/" passHref>
                 <Button
                   className="bg-gradient-to-r from-[#B75CFF] to-[#671AE4] w-full lg:w-[400px] mt-3 flex-1 justify-center"
                   as="a"
@@ -107,10 +104,7 @@ const Tickets = () => {
             </div>
             <div className="text-center p-2 xs:text-xl">Үнэ : 100,000₮</div>
             <div className="text-center p-2 xs:text-xl">
-              <Link
-                href="https://www.portal.mn/quiznight/66b19dcad290ccac1873102d"
-                passHref
-              >
+              <Link href="https://www.quiznight.mn/" passHref>
                 <Button
                   className="bg-gradient-to-r from-[#B75CFF] to-[#671AE4] w-full lg:w-[400px] mt-3 flex-1 justify-center"
                   as="a"
@@ -127,3 +121,6 @@ const Tickets = () => {
 };
 
 export default Tickets;
+
+https://www.portal.mn/quiznight/66b19dcad290ccac1873102d
+// https://www.portal.mn/quiznight/66b19f26d290ccac18731044
