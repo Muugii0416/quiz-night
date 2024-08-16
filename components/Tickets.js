@@ -64,7 +64,7 @@ const Tickets = () => {
             <div className="text-center p-2 xs:text-xl">Үнэ : 100,000₮</div>
             <div className="text-center p-2 xs:text-xl">
               <Link
-                href="https://www.portal.mn/events/66b19f26d290ccac18731044"
+                href="https://www.portal.mn/quiznight/66b19f26d290ccac18731044"
                 passHref
               >
                 <Button
@@ -108,7 +108,7 @@ const Tickets = () => {
             <div className="text-center p-2 xs:text-xl">Үнэ : 100,000₮</div>
             <div className="text-center p-2 xs:text-xl">
               <Link
-                href="https://www.portal.mn/events/66b19dcad290ccac1873102d"
+                href="https://www.portal.mn/quiznight/66b19dcad290ccac1873102d"
                 passHref
               >
                 <Button

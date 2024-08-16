@@ -1,21 +1,15 @@
 import {
   AboutUs,
-  Button,
   Collections,
-  Container,
-  FAQ,
-  FeaturedArtworks,
   Footer,
   Hero,
   Navbar,
   Tickets,
   Sponsor,
-  TopCreator,
   Contact,
 } from "@/components";
 import React from "react";
-import { Reveal } from "react-awesome-reveal";
-import { fadeInDownShorter } from "@/keyframes";
+
 const Home = () => {
   return (
     <div className="h-full main_bg text-white overflow-hidden" id="top">
