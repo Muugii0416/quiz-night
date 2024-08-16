@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 import Score from "@/Model/Score";
-import connectDB from "../lib/connectDB";
+import connectDB from "../../lib/connectDB";
 
 export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Credentials", true);
