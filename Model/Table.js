@@ -14,14 +14,12 @@ const Table = mongoose.Schema(
     table_no: {
       type: Number,
       required: true,
-      unique: true,
       min: min,
       max: max,
     },
     team_name: {
       type: String,
       required: true,
-      unique: true,
     },
     date: {
       required: true,
